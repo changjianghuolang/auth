@@ -1,0 +1,38 @@
+Position:
+cd /home
+tar zxvf ssl.tar.gz
+
+
+Format:		read		write
+	DER	-inform DER	-outform DER
+	PEM	-inform PEM	-ourform PEM 
+
+Method 1
+Steps:
+1	To generate Eur root cert
+	root_cer_Eur_gen.sh
+2	To generate American root cert
+	root_cer_US_gen.sh
+3	To generate cm cert
+	cm_cer.sh 
+4	To generate pkcs#8 private key for cm 
+	key_private_pkcs#8_for_cm.sh
+5	To read cert's purpose
+	openssl x509 -purpose -in server.crt 
+6	To read cert's pkcs#8 private key
+	openssl pkcs8 -nocrypt -inform DER -in cm.crt.p8 
+
+Method 2 
+1 	To generate Eur_root_cert_der , cm_cert_der , cm_priv_key_pkcs#8_der
+	make Eur
+2 	To generate US_root_cert_der , cm_cert_der , cm_ priv_key_pkcs#8_der
+	make US
+
+
+Commands----some openssl show cer content alias
+alias openssl_der='openssl x509  -inform DER -noout -text -in '
+alias openssl_pem='openssl x509  -inform PEM -noout -text -in '
+alias openssl_pem_req='openssl req  -inform PEM -noout -text -in '
+alias openssl_format_pem2der='/home/ssl/openssl_format_pem2der.sh '
+alias openssl_privatekey='openssl rsa -noout -text -in '
+alias openssl_privatekey_pkcs#8="openssl pkcs8 -nocrypt -in "

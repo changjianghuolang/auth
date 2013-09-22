@@ -1,0 +1,100 @@
+curl http://localhost:35357/v2.0/certificates/ca
+-----BEGIN CERTIFICATE-----
+MIIC3jCCAkegAwIBAgIJAPAsrIfMl82jMA0GCSqGSIb3DQEBBAUAMFQxCzAJBgNV
+BAYTAkNOMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMREwDwYDVQQHEwhXZXN0Zm9y
+ZDEMMAoGA1UEChMDU01DMQwwCgYDVQQDEwNTTUMwHhcNMTMwOTIxMDAzOTIwWhcN
+MjMwOTE5MDAzOTIwWjBUMQswCQYDVQQGEwJDTjEWMBQGA1UECBMNTWFzc2FjaHVz
+ZXR0czERMA8GA1UEBxMIV2VzdGZvcmQxDDAKBgNVBAoTA1NNQzEMMAoGA1UEAxMD
+U01DMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJh5/qp6dxurz2HaLMWud/
+IauOCh8TyS5ATaZrlzz27q3K/hBy3xLg35Fhq3JRys4/xZ8GnJ5ZDtMAPAoQpGPN
+1ZdQfveIXcQxytW8TOYhNAH2mTHB19nnDPEy57ulOJAURTXmgOvZhegYHCxMVnLX
+UZVNdB5UFgJlWno1rxOPsQIDAQABo4G3MIG0MAwGA1UdEwQFMAMBAf8wHQYDVR0O
+BBYEFLQxbWtSBwrLj6gUHqXCJcfNC4DkMIGEBgNVHSMEfTB7gBS0MW1rUgcKy4+o
+FB6lwiXHzQuA5KFYpFYwVDELMAkGA1UEBhMCQ04xFjAUBgNVBAgTDU1hc3NhY2h1
+c2V0dHMxETAPBgNVBAcTCFdlc3Rmb3JkMQwwCgYDVQQKEwNTTUMxDDAKBgNVBAMT
+A1NNQ4IJAPAsrIfMl82jMA0GCSqGSIb3DQEBBAUAA4GBAHRgm0IFu6gwxg6NZ9+A
+GlQML+KibvHNr475IKI5AeSVsJ9fFv8PDQdIT/8AtOd0LS5u6bh3b0ci192qMmeo
+fGrfFk39GFNZXnbyQjpffM0yc/+dgNBe4aZ/95Nz5+N1UBcZglXZF+/wRdYllXP1
+vGrlMaULy4VQo8dJ0P4q1o8d
+-----END CERTIFICATE-----
+curl http://localhost:35357/v2.0/certificates/signing
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=CN, ST=Massachusetts, L=Westford, O=SMC, CN=SMC
+        Validity
+            Not Before: Sep 21 00:39:25 2013 GMT
+            Not After : Sep 21 00:39:25 2014 GMT
+        Subject: C=CN, ST=Massachusetts, O=SMC, CN=SMC
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:e2:e0:08:a7:3e:7d:7a:02:73:89:96:ca:5b:18:
+                    e9:74:8d:b5:8b:4f:b6:f0:d8:ba:8f:4c:80:9c:bf:
+                    41:09:fd:2e:e4:e9:93:15:9a:90:c5:0b:c9:8d:e3:
+                    fc:1d:57:da:95:6b:1c:bd:fa:f3:00:a4:7c:01:e8:
+                    80:d9:87:4a:96:1a:29:f1:8c:d7:cf:ef:f4:c4:11:
+                    0d:63:1b:78:a1:e4:42:6a:13:ee:72:13:66:61:b7:
+                    1b:1c:53:14:4b:e6:7d:0d:1b:b3:ac:c3:fa:1c:ba:
+                    6a:75:0c:b6:da:bd:2b:62:fb:9a:ad:53:09:c2:50:
+                    d2:44:dc:a4:16:e5:7f:b3:1b
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: md5WithRSAEncryption
+        a4:95:16:9a:00:59:6a:63:94:19:f9:c4:22:1c:1f:8b:01:7e:
+        b0:a6:df:04:cf:b7:32:f4:79:bd:d1:dc:ff:6a:b6:6f:30:83:
+        8e:b6:15:d0:83:ab:cd:31:e3:78:1e:b4:b3:2a:e1:e2:da:9a:
+        38:b2:67:0a:df:fb:9a:e9:20:78:4b:9f:62:67:7e:7e:bc:99:
+        0c:58:59:c4:b7:26:0c:9c:a3:62:01:e7:5d:2f:f3:51:d7:3b:
+        91:3f:38:fc:4f:b6:05:93:15:20:b3:2d:60:76:85:5a:33:70:
+        be:15:e1:09:29:59:28:88:0f:89:f1:e9:7f:ea:3b:82:a9:3b:
+        3d:38
+-----BEGIN CERTIFICATE-----
+MIICBDCCAW0CAQEwDQYJKoZIhvcNAQEEBQAwVDELMAkGA1UEBhMCQ04xFjAUBgNV
+BAgTDU1hc3NhY2h1c2V0dHMxETAPBgNVBAcTCFdlc3Rmb3JkMQwwCgYDVQQKEwNT
+TUMxDDAKBgNVBAMTA1NNQzAeFw0xMzA5MjEwMDM5MjVaFw0xNDA5MjEwMDM5MjVa
+MEExCzAJBgNVBAYTAkNOMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMQwwCgYDVQQK
+EwNTTUMxDDAKBgNVBAMTA1NNQzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA
+4uAIpz59egJziZbKWxjpdI21i0+28Ni6j0yAnL9BCf0u5OmTFZqQxQvJjeP8HVfa
+lWscvfrzAKR8AeiA2YdKlhop8YzXz+/0xBENYxt4oeRCahPuchNmYbcbHFMUS+Z9
+DRuzrMP6HLpqdQy22r0rYvuarVMJwlDSRNykFuV/sxsCAwEAATANBgkqhkiG9w0B
+AQQFAAOBgQCklRaaAFlqY5QZ+cQiHB+LAX6wpt8Ez7cy9Hm90dz/arZvMIOOthXQ
+g6vNMeN4HrSzKuHi2po4smcK3/ua6SB4S59iZ35+vJkMWFnEtyYMnKNiAeddL/NR
+1zuRPzj8T7YFkxUgsy1gdoVaM3C+FeEJKVkoiA+J8el/6juCqTs9OA==
+-----END CERTIFICATE-----
+curl -d '{"auth": {"tenantName": "adminTenant", "passwordCredentials":{"username": "admin", "password": "openstack"}}}' -H "Content-type: application/json" http://"192.168.1.105":"35357"/v2.0/tokens | python -mjson.tool
+{
+    "access": {
+        "metadata": {
+            "is_admin": 0, 
+            "roles": [
+                "c7c222bb115840c999584eb580996439"
+            ]
+        }, 
+        "serviceCatalog": [], 
+        "token": {
+            "expires": "2013-09-22T00:43:43Z", 
+            "id": "MIIDHgYJKoZIhvcNAQcCoIIDDzCCAwsCAQExCTAHBgUrDgMCGjCCAfoGCSqGSIb3DQEHAaCCAesEggHneyJhY2Nlc3MiOiB7InRva2VuIjogeyJpc3N1ZWRfYXQiOiAiMjAxMy0wOS0yMVQwMDo0Mzo0My4yMDE3MzAiLCAiZXhwaXJlcyI6ICIyMDEzLTA5LTIyVDAwOjQzOjQzWiIsICJpZCI6ICJwbGFjZWhvbGRlciIsICJ0ZW5hbnQiOiB7ImRlc2NyaXB0aW9uIjogIkFkbWluVGVuYW50IiwgImVuYWJsZWQiOiB0cnVlLCAiaWQiOiAiNmMwZjIyMzdkZDI1NGZjMWFmNWM4ZmZkMTc1NWM3ODQiLCAibmFtZSI6ICJhZG1pblRlbmFudCJ9fSwgInNlcnZpY2VDYXRhbG9nIjogW10sICJ1c2VyIjogeyJ1c2VybmFtZSI6ICJhZG1pbiIsICJyb2xlc19saW5rcyI6IFtdLCAiaWQiOiAiMjIyYmU2NmM5ZGI5NGQ3NGFkZmQyZWQ0NTJmZTEzYTUiLCAicm9sZXMiOiBbeyJuYW1lIjogImFkbWluUm9sZSJ9XSwgIm5hbWUiOiAiYWRtaW4ifSwgIm1ldGFkYXRhIjogeyJpc19hZG1pbiI6IDAsICJyb2xlcyI6IFsiYzdjMjIyYmIxMTU4NDBjOTk5NTg0ZWI1ODA5OTY0MzkiXX19fTGB-DCB+QIBATBZMFQxCzAJBgNVBAYTAkNOMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMREwDwYDVQQHEwhXZXN0Zm9yZDEMMAoGA1UEChMDU01DMQwwCgYDVQQDEwNTTUMCAQEwBwYFKw4DAhowDQYJKoZIhvcNAQEBBQAEgYAr10q0dcdojwgmnWhBsElg8N6Q8IhhC+jmI2tOJsQs5iqnVPW-PUONDRRzG+F3-xSNGFJFxzc3hnGwOh3+Ud0wR+JA+0NiEaHNmVfRTDjNMWniS+eYorhEgjCmkpzKitHwkZXRXy8ZxrXUEZ01pd5-kyZX5bPTyxyftmdf-fBlBA==", 
+            "issued_at": "2013-09-21T00:43:43.201730", 
+            "tenant": {
+                "description": "AdminTenant", 
+                "enabled": true, 
+                "id": "6c0f2237dd254fc1af5c8ffd1755c784", 
+                "name": "adminTenant"
+            }
+        }, 
+        "user": {
+            "id": "222be66c9db94d74adfd2ed452fe13a5", 
+            "name": "admin", 
+            "roles": [
+                {
+                    "name": "adminRole"
+                }
+            ], 
+            "roles_links": [], 
+            "username": "admin"
+        }
+    }
+}
